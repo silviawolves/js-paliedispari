@@ -18,7 +18,7 @@ function isPalindroma(parolaUtente) {
         console.log(parolaScomposta[i])
     }
 
-    for (let k = parolaScomposta.length - 1; k <= 0; k--) {
+    for (let k = parolaScomposta.length - 1; k >= 0; k--) {
         console.log(parolaScomposta[k])
     }
 
