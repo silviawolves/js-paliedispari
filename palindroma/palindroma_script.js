@@ -12,19 +12,23 @@ function isPalindroma(parolaDaControllare) {
     console.log(parolaScomposta)
     
     //creo array dove andrà la stessa parola scomposta, ma al contrario
-    const parolaAlContrario = []
+    const parolaScompostaAlContrario = []
 
     //creo un ciclo per percorrere la parola al contrario e pusharla nell'array, al contrario
     for (let k = parolaScomposta.length - 1; k >= 0; k--) {
-            parolaAlContrario.push(parolaScomposta[k])
+        parolaScompostaAlContrario.push(parolaScomposta[k])
         }
+
+    //riassemblo le lettere scomposte ed al contrario, in una nuova parola al contrario
+    const parolaAlContrario = parolaScompostaAlContrario.join("")
     console.log(parolaAlContrario)
 
     //confronto i due risultati per capire se sono uguali, se sono uguali - la parola è palindroma
-    if (parolaAlContrario === parolaScomposta) {
+    if (parolaAlContrario === parolaDaControllare) {
         palindromia = true
     }
 
+    return palindromia
 }
 
 console.log(isPalindroma(parolaUtente))
