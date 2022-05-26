@@ -14,18 +14,18 @@ function isPalindroma(parolaUtente) {
     //scompongo quella parola lettera per lettera e creo una costante
     const parolaScomposta = parolaUtente.split("")
     console.log(parolaScomposta)
+    
+    //creo array dove andrà la stessa parola scomposta, ma al contrario
     const parolaAlContrario = []
 
+    //creo un ciclo per percorrere la parola al contrario e pusharla nell'array al contrario
     for (let k = parolaScomposta.length - 1; k >= 0; k--) {
-            console.log(parolaScomposta[k])
             parolaAlContrario.push(parolaScomposta[k])
         }
-    
     console.log(parolaAlContrario)
 
-    if (parolaAlContrario === parolaScomposta) {
-        palindromia === true
-    }
+    //unisco di nuovo i valori dell'array in una parola? COME CAZZO FACCIO
+
 }
 
 console.log(isPalindroma(parolaUtente))
