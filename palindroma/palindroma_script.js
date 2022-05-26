@@ -24,7 +24,9 @@ function isPalindroma(parolaUtente) {
         }
     console.log(parolaAlContrario)
 
-    //unisco di nuovo i valori dell'array in una parola? COME CAZZO FACCIO
+    if (parolaAlContrario === parolaScomposta) {
+        palindromia === true
+    }
 
 }
 
