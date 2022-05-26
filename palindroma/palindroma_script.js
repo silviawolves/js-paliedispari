@@ -10,18 +10,22 @@ let palindromia = false
 //che scorra dentro gli array 
 
 function isPalindroma(parolaUtente) {
+
     //scompongo quella parola lettera per lettera e creo una costante
     const parolaScomposta = parolaUtente.split("")
     console.log(parolaScomposta)
-
-    for (let i = 0; i < parolaScomposta.length; i++) {
-        console.log(parolaScomposta[i])
-    }
+    const parolaAlContrario = []
 
     for (let k = parolaScomposta.length - 1; k >= 0; k--) {
-        console.log(parolaScomposta[k])
-    }
+            console.log(parolaScomposta[k])
+            parolaAlContrario.push(parolaScomposta[k])
+        }
+    
+    console.log(parolaAlContrario)
 
+    if (parolaAlContrario === parolaScomposta) {
+        palindromia === true
+    }
 }
 
 console.log(isPalindroma(parolaUtente))
