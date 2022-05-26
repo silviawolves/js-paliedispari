@@ -13,12 +13,21 @@ function numeroPc() {
     return generoNumeroPc
 }
 
+//creo una variabile per recuperare il risultato
 const numeroRisultantePc = numeroPc()
+
+//sommo i numeri risultanti tra utente e pc, creando la variabile della somma + il log
 let sommaNumeri = numeroUtente + numeroRisultantePc
 console.log(`${numeroUtente} + ${numeroRisultantePc} = ${sommaNumeri}`)
 
-//creo una funzione dentro la quale sommo i numeri di utente e pc
 //stabilisco se la somma è pari o dispari
+function isPari() {
+    const result = sommaNumeri % 2 === 0
+    return result 
+}
+
+
+
 //il risultato deve rimandare 
 
 
